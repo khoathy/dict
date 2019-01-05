@@ -1,0 +1,18 @@
+// .search {
+//     background-color: $color-bg-dark;
+//     height: calc(100vh - 6rem);
+//     width: 100vw;
+// }
+
+.bg__shape {
+    @include center;
+    width: 70vw;
+    opacity: 0.5;
+
+}
+.bg__svg {
+    width: 90vw;
+    max-height: 90vh;
+    position: absolute;
+    margin: 0 5vw;
+}

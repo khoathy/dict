@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Muli:300i,400" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>Dictionary</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="result.html">Search Result</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="header__back"></div>
+            <div class="header__middle">
+                <a href ="#"><img src="img/logo.png" alt="logo" class="nav__logo"></a>
+            </div>
+            <div class="header__fore"></div>
+             -->
+        </header>
+        <!-- <div class="bg">
+            <svg class="bg__svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio=none viewBox="0 0 1280 1024"><style type="text/css">  
+                    .st0{fill:rgb(240, 239, 237);}
+            </style><path class="st0" d="M1102.3 924C992.5 977 851 953.5 736 933.8c-127.9-21.9-252.8-55.2-381.4-69.6 -105.9-12.1-235.4-34.8-305-125.6 -65.8-85.5-53.7-207.4-34.1-307.3C35.2 330.7 90.5 211.1 182 155.9c82.5-49.2 195.2-77.2 289.8-85.5 53-4.5 106.7-2.3 159.7 0 77.9 3 157.4 3.8 234.6 21.2 107.5 25 227.8 73.4 315.6 142.3 92.3 72.7 91.6 234.6 96.1 340.6 3 64.3 6.8 127.9-18.9 189.2C1228.6 834.7 1171.1 891.4 1102.3 924z"/></svg>    
+        </div> -->
+        <section class="search">
+            <!-- <div>
+                <h1 class="heading-primary">Dictionary</h1>
+                <p class="heading-sub"> 
+                    Lorem, ipsum dolor sit amet consectetur adipisics quo exercitationem, velit ex? Culpa ex commodi eaque doloribus rem debitis sint? Nam libero nihil ipsa?
+                </p>
+            </div> -->
+            <!-- <h1 class="search__heading">
+                FAST, FUN, FULL LOOKUP
+            </h1> -->
+            <div class="search__box" id="search__box">
+                <form action="#" class="search__form">
+                    <input class="search__input" name="search" placeholder="Type the word here" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" autofocus>
+                   
+                    <!-- <button class="search__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="search__icon">
+                            <path d="M89.207 94.156L65.452 70.402c-6.508 5.374-14.68 8.318-23.17 8.318-9.734 0-18.884-3.79-25.765-10.673C9.635 61.165 5.844 52.015 5.844 42.282S9.634 23.4 16.518 16.517c6.88-6.882 16.03-10.673 25.764-10.673s18.885 3.79 25.768 10.672c13.313 13.314 14.238 34.542 2.353 48.936l23.755 23.755-4.95 4.95zM42.28 12.844c-7.86 0-15.253 3.062-20.813 8.622-5.56 5.56-8.623 12.953-8.623 20.816s3.063 15.255 8.623 20.816c5.56 5.56 12.953 8.622 20.814 8.622 7.863 0 15.257-3.063 20.82-8.623 11.475-11.477 11.475-30.153 0-41.63-5.563-5.56-12.956-8.623-20.82-8.623z"></path>
+                        </svg>
+                    </button> -->
+                </form>
+                <div class="search__info">Hit 'enter' to search or 'ESC' to close</div>
+                <div class="search__suggestion">
+                        <ul class="search__suggestion-list">
+                            <li class="search__suggestion-word"><a href="#">suggestion1</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion2</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion3</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion4</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion5</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion6</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion7</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion8</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion9</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion10</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion11</a></li>
+                            <li class="search__suggestion-word"><a href="#">suggestion12</a></li>
+                        </ul>
+                </div>    
+        
+                    
+            </div>
+
+
+                <!-- <svg class="search__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <path d="M89.207 94.156L65.452 70.402c-6.508 5.374-14.68 8.318-23.17 8.318-9.734 0-18.884-3.79-25.765-10.673C9.635 61.165 5.844 52.015 5.844 42.282S9.634 23.4 16.518 16.517c6.88-6.882 16.03-10.673 25.764-10.673s18.885 3.79 25.768 10.672c13.313 13.314 14.238 34.542 2.353 48.936l23.755 23.755-4.95 4.95zM42.28 12.844c-7.86 0-15.253 3.062-20.813 8.622-5.56 5.56-8.623 12.953-8.623 20.816s3.063 15.255 8.623 20.816c5.56 5.56 12.953 8.622 20.814 8.622 7.863 0 15.257-3.063 20.82-8.623 11.475-11.477 11.475-30.153 0-41.63-5.563-5.56-12.956-8.623-20.82-8.623z">
+                    </path>
+                </svg> -->
+                
+
+
+        </section>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+    
+</html>

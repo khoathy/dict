@@ -1,0 +1,37 @@
+.result {
+    width: 90vw;
+    //background: $color-blue;
+    padding: 24rem 8vw 6rem 8vw;
+    margin: 0 auto;
+
+    &__heading {
+        background: $color-gray-1;
+        color: $color-blue;
+        border-radius: 0.5rem;
+        display: inline-block;
+        padding: 0 2rem;
+       //border-bottom: 2px solid $color-gray-2;
+    }
+    &__content {
+        padding: 1rem 0;
+    }
+    &__list{
+        //background: red;
+        padding-top : 2rem;
+        
+        
+    }
+    &__meaning {
+        list-style: square inside;
+        padding-top : 1.5rem;
+        padding-left: 4rem;
+        &-detail {
+            list-style: none;
+            padding-left: 8rem;
+            padding-top: 0.5rem;
+            
+        }
+
+    }
+
+}

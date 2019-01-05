@@ -1,0 +1,120 @@
+.search {
+    background-color: $color-bg-light;
+    height: calc(100vh - 6rem);
+    width: 100vw;
+
+    &__box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        //background: rgba($color-blue,0.1);
+        padding: 1.5rem 2.5rem;
+        border-radius: 5px;
+       // box-shadow: 1px 2px 0.5rem rgba($color-gray,0.2);
+        transition: all 0.3s;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__input {
+        width: 75vw;
+        min-width: 30rem;
+        //height: 4.5rem;
+        //font-size: 160%;
+        //height: 10rem;
+        font-size: 7vw;
+        font-family: inherit;
+        line-height: 1;
+        padding-bottom: 1rem;
+        color: $color-blue;
+        background: none;
+        border: none;
+        border-bottom: solid 2px rgba($color-blue-2,0.8);
+        @include respond(phone){
+            width: 80vw;
+        }
+        
+        &::placeholder {
+            color: $color-gray-1;
+            font-weight: 500;
+            
+        }
+        &:focus {
+            outline: none;
+            border-bottom: solid 2px $color-blue-2;
+        }
+    }
+
+    &__info {
+        font-size: 70%;
+        font-weight: bold;
+        color: $color-blue-2;
+        display: block;
+        margin: 0;
+        padding: 1rem 0;
+        text-align: right;
+    }
+
+    
+
+    // &__btn {
+    //     display: inline-block;
+    //     width: 3.5rem;
+    //     height: 3.5rem;
+    //     background: none;
+    //     margin: 0 1rem;
+    //     border: none;
+    // }
+
+    // &__icon:hover {fill: $color-highlight;}
+    
+    // &:hover &__svg {
+    //     fill: $color-highlight;
+    // }
+
+
+    &__top {
+        background: $color-blue;
+        height: 24rem;
+        position: fixed;
+        top: 0;
+        &-box {
+            padding-top: 6rem;
+            max-width: 55rem;
+        }
+        
+        &-input {
+            font-size: 3rem;
+            color: $color-gray-1;
+            
+            &::placeholder {
+                font-weight: 400;
+                
+            }
+        }
+        
+    }
+
+
+    // &__top {
+    //     //background: green;
+    //     height: 18rem;
+    //     width: 65rem;
+    //     position: fixed;
+    //     top: 0rem;
+    //     right: 0;
+    //     &-box {
+    //         max-width: 55rem;
+    //         padding-top: 10rem;
+    //     }
+        
+    //     &-input {
+    //         font-size: 3.5rem;
+    //     }
+        
+    // }
+}

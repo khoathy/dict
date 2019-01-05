@@ -1,0 +1,22 @@
+.nav {
+    width: 100vw;
+    height: 6rem;
+    background-color: transparent;
+    &__menu {
+        position: fixed;
+        top: 1.8rem;
+        right: 6rem;
+        z-index: 100;
+        & li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 3rem;
+            & a {
+                text-decoration: none;
+                color: $color-gray-2;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
