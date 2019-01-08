@@ -23,12 +23,29 @@
     }
     &__meaning {
         list-style: square inside;
-        padding-top : 1.5rem;
-        padding-left: 4rem;
+        margin-top : 1.2rem;
+        margin-left: 4rem;
         &-detail {
             list-style: none;
-            padding-left: 8rem;
-            padding-top: 0.5rem;
+            margin: 1rem 0 0.5rem 6rem;
+            
+        }
+        &-example {
+            margin-left: 4rem;
+            margin-top: 0.5rem;
+            position: relative;
+            
+            &::before {
+                content: "- ";
+                position: absolute;
+                left: -2rem;
+                top: 0;
+                
+            }
+            &--translation {
+                color: $color-gray-3;
+                
+            }
             
         }
 

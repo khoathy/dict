@@ -40,12 +40,22 @@ body {
 }
 
 .paragraph {
-    
+    color: $color-gray-4;
     font-family: 'Muli', sans-serif;
     font-weight: 400;
     &-2 {
+        font-weight: 300;
+        
+    }
+    &-3 {
         font-style: italic;
         font-weight: 300;
         
     }
+    // &-3 {
+    //     font-size: 1.6rem;
+    //     font-style: italic;
+    //     font-weight: 300;
+    //     color: $color-gray-3;
+    // }
 }
