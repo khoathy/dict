@@ -74,11 +74,11 @@
 
     &__top {
         background: $color-blue;
-        height: 24rem;
+        height: 28rem;
         position: fixed;
         top: 0;
         &-box {
-            padding-top: 6rem;
+            padding-top: 4rem;
             max-width: 55rem;
         }
         
@@ -91,7 +91,6 @@
                 
             }
         }
-        
     }
 
 

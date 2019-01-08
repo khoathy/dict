@@ -36,9 +36,6 @@ body {
   font-size: 4.5rem;
   font-weight: 500; }
 
-.heading-3 {
-  font-size: 3.6rem; }
-
 .heading-4 {
   font-size: 2.2rem;
   font-weight: 500;
@@ -100,11 +97,11 @@ body {
     width: 100%; }
   .search__top {
     background: #0a3acb;
-    height: 24rem;
+    height: 28rem;
     position: fixed;
     top: 0; }
     .search__top-box {
-      padding-top: 6rem;
+      padding-top: 4rem;
       max-width: 55rem; }
     .search__top-input {
       font-size: 3rem;
@@ -126,16 +123,26 @@ body {
     width: 25%;
     float: left;
     list-style: none;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+    font-size: 110%; }
     .search__suggestion-word a {
       text-decoration: none;
       color: #5376c7; }
       .search__suggestion-word a:hover {
         color: #0a3acb; }
 
+.search__top-suggestion {
+  margin-top: 1rem; }
+  .search__top-suggestion .search__suggestion-word {
+    font-size: 85%; }
+    .search__top-suggestion .search__suggestion-word a {
+      color: #d3d3d3; }
+      .search__top-suggestion .search__suggestion-word a:hover {
+        color: #587ef1; }
+
 .result {
   width: 90vw;
-  padding: 24rem 8vw 6rem 8vw;
+  padding: 28rem 8vw 6rem 8vw;
   margin: 0 auto; }
   .result__heading {
     background: #f0f0f0;
@@ -143,6 +150,10 @@ body {
     border-radius: 0.5rem;
     display: inline-block;
     padding: 0 2rem; }
+  .result__pronunciation {
+    padding: 0 1rem;
+    color: #587ef1;
+    display: inline-block; }
   .result__content {
     padding: 1rem 0; }
   .result__list {
