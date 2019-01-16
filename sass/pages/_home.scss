@@ -16,3 +16,16 @@
     position: absolute;
     margin: 0 5vw;
 }
+
+#book-1 {
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+    width: 100vw;
+    @include respond(tab-port){
+        min-width: 100rem; 
+    }
+    @include respond(phone){
+        right: -30rem;
+    }
+}

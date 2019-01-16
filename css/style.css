@@ -9,6 +9,12 @@
 
 1em = 16px
 */
+@keyframes enter-left {
+  0% {
+    left: 0; }
+  100% {
+    left: 100vw; } }
+
 * {
   margin: 0;
   padding: 0; }
@@ -28,8 +34,9 @@ body {
   font-weight: 400;
   font-size: 1.8rem;
   letter-spacing: 0.05rem;
+  word-spacing: 1px;
   line-height: 1.7;
-  color: #7d7c88;
+  color: #9392a2;
   padding: 0; }
 
 .heading-2 {
@@ -41,7 +48,7 @@ body {
   font-weight: 500;
   display: inline-block;
   padding: 0 1rem;
-  color: #5376c7; }
+  color: #4267bd; }
 
 .paragraph {
   color: #55555e;
@@ -63,7 +70,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75vw;
+    width: 70vw;
     border-radius: 5px;
     transition: all 0.3s; }
   .search__input {
@@ -73,10 +80,10 @@ body {
     font-family: inherit;
     line-height: 1;
     padding-bottom: 1rem;
-    color: #0a3acb;
+    color: #0733b5;
     background: none;
     border: none;
-    border-bottom: solid 2px rgba(88, 126, 241, 0.8); }
+    border-bottom: solid 2px rgba(102, 135, 235, 0.8); }
     @media only screen and (max-width: 37.5em) {
       .search__input {
         width: 80vw; } }
@@ -85,18 +92,18 @@ body {
       font-weight: 500; }
     .search__input:focus {
       outline: none;
-      border-bottom: solid 2px #587ef1; }
+      border-bottom: solid 2px #6687eb; }
   .search__info {
     font-size: 70%;
     font-weight: bold;
-    color: #587ef1;
+    color: #6687eb;
     display: block;
     margin: 0;
     padding: 1rem 0;
     text-align: right;
     width: 100%; }
   .search__top {
-    background: #0a3acb;
+    background: #1e3799;
     height: 28rem;
     position: fixed;
     top: 0; }
@@ -127,9 +134,9 @@ body {
     font-size: 110%; }
     .search__suggestion-word a {
       text-decoration: none;
-      color: #5376c7; }
+      color: #4267bd; }
       .search__suggestion-word a:hover {
-        color: #0a3acb; }
+        color: #0733b5; }
 
 .search__top-suggestion {
   margin-top: 1rem; }
@@ -138,7 +145,7 @@ body {
     .search__top-suggestion .search__suggestion-word a {
       color: #d3d3d3; }
       .search__top-suggestion .search__suggestion-word a:hover {
-        color: #587ef1; }
+        color: #6687eb; }
 
 .result {
   width: 90vw;
@@ -146,13 +153,13 @@ body {
   margin: 0 auto; }
   .result__heading {
     background: #f0f0f0;
-    color: #0a3acb;
+    color: #0733b5;
     border-radius: 0.5rem;
     display: inline-block;
     padding: 0 2rem; }
   .result__pronunciation {
     padding: 0 1rem;
-    color: #587ef1;
+    color: #6687eb;
     display: inline-block; }
   .result__content {
     padding: 1rem 0; }
@@ -175,7 +182,7 @@ body {
         left: -2rem;
         top: 0; }
       .result__meaning-example--translation {
-        color: #7d7c88; }
+        color: #9392a2; }
 
 .nav {
   width: 100vw;
@@ -209,3 +216,25 @@ body {
   max-height: 90vh;
   position: absolute;
   margin: 0 5vw; }
+
+#book-1 {
+  position: absolute;
+  bottom: 1rem;
+  right: 0;
+  width: 100vw; }
+  @media only screen and (max-width: 56.25em) {
+    #book-1 {
+      min-width: 100rem; } }
+  @media only screen and (max-width: 37.5em) {
+    #book-1 {
+      right: -30rem; } }
+
+#book-2 {
+  position: absolute;
+  bottom: -2rem;
+  left: -16rem;
+  width: 12rem; }
+  @media only screen and (max-width: 56.25em) {
+    #book-2 {
+      bottom: -11rem;
+      left: -5rem; } }

@@ -1,0 +1,15 @@
+
+
+#book-2 {
+    position: absolute;
+    bottom: -2rem;
+    left: -16rem;
+    width: 12rem;
+    @include respond(tab-port){
+        bottom: -11rem;
+        left: -5rem;
+    }
+    // @include respond(phone){
+    //     right: -30rem;
+    // }
+}
