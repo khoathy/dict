@@ -165,23 +165,23 @@ body {
     padding: 1rem 0; }
   .result__list {
     padding-top: 2rem; }
-  .result__meaning {
+  .result__item {
     list-style: square inside;
     margin-top: 1.2rem;
     margin-left: 4rem; }
-    .result__meaning-detail {
+    .result__item-detail {
       list-style: none;
       margin: 1rem 0 0.5rem 6rem; }
-    .result__meaning-example {
+    .result__item-example {
       margin-left: 4rem;
       margin-top: 0.5rem;
       position: relative; }
-      .result__meaning-example::before {
+      .result__item-example::before {
         content: "- ";
         position: absolute;
         left: -2rem;
         top: 0; }
-      .result__meaning-example--translation {
+      .result__item-example--translation {
         color: #9392a2; }
 
 .nav {
