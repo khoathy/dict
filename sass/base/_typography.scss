@@ -53,10 +53,8 @@ body {
         font-weight: 300;
         //font-size: 1.6rem;
     }
-    // &-3 {
-    //     font-size: 1.6rem;
-    //     font-style: italic;
-    //     font-weight: 300;
-    //     color: $color-gray-3;
-    // }
+    &-sub {
+        color: $color-gray-3;
+        //color: $color-blue-1;
+    }
 }
