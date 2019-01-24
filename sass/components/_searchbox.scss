@@ -14,6 +14,9 @@
        // background: rgba($color-blue,0.1);
         border-radius: 5px;
         transition: all 0.3s;
+        @include respond(phone){
+            width: 80vw;
+        }
     }
 
     &__form {
@@ -31,13 +34,15 @@
         border: none;
         border-bottom: solid 2px rgba($color-blue-2,0.8);
         @include respond(phone){
-            width: 80vw;
+        padding-bottom: 0.5rem;
+           font-size: 8vw;
         }
-        
+
+
         &::placeholder {
             color: $color-gray-1;
             font-weight: 500;
-            
+           
         }
         &:focus {
             outline: none;
@@ -79,40 +84,40 @@
         position: fixed;
         top: 0;
         z-index: 50;
+        @include respond(phone){
+            height: 24rem;
+        }
+        
         &-box {
             padding-top: 4rem;
-            max-width: 55rem;
+            width: 52rem;
+            @include respond(tab-port){
+                width: 40rem;
+                left: 60%;
+            }
+            @include respond(phone){
+                width: 70vw;
+                left: 50%;
+            }
         }
         
         &-input {
             font-size: 3rem;
             color: $color-gray-1;
-            // color: $color-blue;
-            max-width: 55rem;
+            @include respond(phone){
+                font-size: 2.6rem;
+            }
             &::placeholder {
                 font-weight: 400;
                 // color: $color-blue;
                 
             }
         }
+        &-info {
+            padding: 0.5rem 0;
+        }
     }
 
 
-    // &__top {
-    //     //background: green;
-    //     height: 18rem;
-    //     width: 65rem;
-    //     position: fixed;
-    //     top: 0rem;
-    //     right: 0;
-    //     &-box {
-    //         max-width: 55rem;
-    //         padding-top: 10rem;
-    //     }
-        
-    //     &-input {
-    //         font-size: 3.5rem;
-    //     }
-        
-    // }
+    
 }

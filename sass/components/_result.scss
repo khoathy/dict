@@ -1,8 +1,14 @@
 .result {
-    width: 90vw;
-    //background: $color-blue;
+    width: 70vw;
     padding: 28rem 8vw 6rem 8vw;
     margin: 0 auto;
+    @include respond(tab-port){
+        width: 95vw;
+    }
+    @include respond(phone){
+        padding: 23rem 2rem 6rem 2rem;
+    }
+    
 
     &__heading {
         background: $color-gray-1;

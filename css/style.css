@@ -32,7 +32,7 @@ html {
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 0.05rem;
   word-spacing: 1px;
   line-height: 1.7;
@@ -75,6 +75,9 @@ body {
     width: 65vw;
     border-radius: 5px;
     transition: all 0.3s; }
+    @media only screen and (max-width: 37.5em) {
+      .search__box {
+        width: 80vw; } }
   .search__input {
     width: 100%;
     min-width: 30rem;
@@ -88,7 +91,8 @@ body {
     border-bottom: solid 2px rgba(102, 135, 235, 0.8); }
     @media only screen and (max-width: 37.5em) {
       .search__input {
-        width: 80vw; } }
+        padding-bottom: 0.5rem;
+        font-size: 8vw; } }
     .search__input::placeholder {
       color: #f0f0f0;
       font-weight: 500; }
@@ -110,15 +114,30 @@ body {
     position: fixed;
     top: 0;
     z-index: 50; }
+    @media only screen and (max-width: 37.5em) {
+      .search__top {
+        height: 24rem; } }
     .search__top-box {
       padding-top: 4rem;
-      max-width: 55rem; }
+      width: 52rem; }
+      @media only screen and (max-width: 56.25em) {
+        .search__top-box {
+          width: 40rem;
+          left: 60%; } }
+      @media only screen and (max-width: 37.5em) {
+        .search__top-box {
+          width: 70vw;
+          left: 50%; } }
     .search__top-input {
       font-size: 3rem;
-      color: #f0f0f0;
-      max-width: 55rem; }
+      color: #f0f0f0; }
+      @media only screen and (max-width: 37.5em) {
+        .search__top-input {
+          font-size: 2.6rem; } }
       .search__top-input::placeholder {
         font-weight: 400; }
+    .search__top-info {
+      padding: 0.5rem 0; }
 
 .search__suggestion {
   width: 100%;
@@ -151,9 +170,15 @@ body {
         color: #6687eb; }
 
 .result {
-  width: 90vw;
+  width: 70vw;
   padding: 28rem 8vw 6rem 8vw;
   margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .result {
+      width: 95vw; } }
+  @media only screen and (max-width: 37.5em) {
+    .result {
+      padding: 23rem 2rem 6rem 2rem; } }
   .result__heading {
     background: #f0f0f0;
     color: #0733b5;
@@ -231,9 +256,10 @@ body {
 #book-2 {
   position: absolute;
   bottom: -2rem;
-  left: -16rem;
+  left: -15rem;
   width: 12rem; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     #book-2 {
-      bottom: -11rem;
-      left: -5rem; } }
+      bottom: -9rem;
+      left: -4rem;
+      width: 9rem; } }
