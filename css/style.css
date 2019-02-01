@@ -170,7 +170,7 @@ body {
         color: #6687eb; }
 
 .result {
-  width: 70vw;
+  width: 100vw;
   padding: 28rem 8vw 6rem 8vw;
   margin: 0 auto; }
   @media only screen and (max-width: 56.25em) {
@@ -190,7 +190,13 @@ body {
     color: #6687eb;
     display: inline-block; }
   .result__content {
-    padding: 1rem 0; }
+    width: 100%;
+    display: flex; }
+  .result__column {
+    width: 50%;
+    margin: 1rem 0; }
+    .result__column:first-child {
+      border-right: solid 2px #d3d3d3; }
   .result__list {
     padding-top: 2rem; }
   .result__item {

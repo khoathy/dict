@@ -1,5 +1,5 @@
 .result {
-    width: 70vw;
+    width: 100vw;
     padding: 28rem 8vw 6rem 8vw;
     margin: 0 auto;
     @include respond(tab-port){
@@ -24,7 +24,15 @@
         display: inline-block;
     }
     &__content {
-        padding: 1rem 0;
+        width: 100%;
+        display: flex;
+    }
+    &__column {
+        width: 50%;
+        margin: 1rem 0;
+        &:first-child {
+            border-right: solid 2px $color-gray-2;
+        }
     }
     &__list{
         //background: red;
