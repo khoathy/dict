@@ -64,8 +64,14 @@
             </div>
 
             <p class="result__pronunciation paragraph">/iɡˈzampəl/</p>
+            
             <div class="result__content">
-                <div class="result__column">
+                <div class="result__tab">
+                    <button class="heading-5 result__tab-link" onclick="openTab(event, 'EngViet')" id="defaultOpen">&#8674; Vietnamese</button>
+                    <button class="heading-5 result__tab-link" onclick="openTab(event, 'EngEng')">&#8674; English</button>
+                </div>
+
+                <div id ="EngViet" class="result__tab-content">
                     <ul class="result__list">
                     <h4 class="heading-4">danh từ</h4>       
                         <li class="result__item paragraph">thí dụ, ví dụ</li>
@@ -99,7 +105,7 @@
                         <li class="result__item paragraph">dùng làm mẫu; dùng làm gương</li>
                     </ul>
                 </div> 
-                <div class="result__column">
+                <div id ="EngEng" class="result__tab-content">
                     <ul class="result__list">
                     <h4 class="heading-4">noun</h4>       
                         <li class="result__item paragraph">a task performed or problem solved in order to develop skill or understanding
@@ -126,11 +132,6 @@
 
                     </ul>
                     
-                    <ul class="result__list">
-                    <h4 class="heading-4">động từ</h4>  
-                        <li class="result__item paragraph">dùng làm thí dụ</li>
-                        <li class="result__item paragraph">dùng làm mẫu; dùng làm gương</li>
-                    </ul>
                 </div> 
             </div>   
         </section>

@@ -36,8 +36,13 @@ body {
         font-weight: 500;  
         display: inline-block;
         padding: 0 1rem;
-        color: $color-blue-1;
-        
+        color: $color-blue-1; 
+    }
+    &-5 {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        //color: $color-blue-2; 
     }
 }
 

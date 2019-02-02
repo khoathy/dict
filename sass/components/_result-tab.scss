@@ -1,0 +1,35 @@
+// button.active {
+//     color: $color-blue;
+// }
+.result__tab {
+    margin: 3rem auto 0.5rem;
+    width: 100%;
+    height: 4rem;
+    //border-bottom: solid 1px $color-gray;
+    background-color: #fff;
+    &-link {
+        height: 100%;
+        float: left;
+        outline: none;
+        border: none;
+        background-color: inherit;
+        color: $color-gray-2;
+        cursor: pointer;
+        padding : 1rem;
+        &:not(:last-child){
+            margin-right: 4rem;
+        }
+        &:hover {
+            color :$color-peach;
+        }
+        &.active {
+            color: $color-carrot;
+        }
+        
+    }
+    
+    &-content {
+
+        
+    }
+}

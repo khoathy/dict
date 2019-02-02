@@ -1,7 +1,8 @@
 .result {
-    width: 100vw;
+    width: 75vw;
     padding: 28rem 8vw 6rem 8vw;
     margin: 0 auto;
+    
     @include respond(tab-port){
         width: 95vw;
     }
@@ -25,26 +26,23 @@
     }
     &__content {
         width: 100%;
-        display: flex;
     }
-    &__column {
-        width: 50%;
-        margin: 1rem 0;
-        &:first-child {
-            border-right: solid 2px $color-gray-2;
-        }
-    }
+    // &__tab {
+    //     width: 100%;
+    //     background-color: black;
+    //     margin: 1rem 0;
+    //     &:first-child {
+    //         border-right: solid 2px $color-gray-2;
+    //     }
+    // }
     &__list{
-        //background: red;
         padding-top : 2rem;
-        
-        
     }
     &__item {
         list-style: square inside;
-        margin : 1.5rem 0 1.5rem 4rem;
+        margin : 1.2rem 0 1.2rem 4rem;
         &-detail {
-            margin: 0.8rem 0 1rem 6rem;   
+            margin: 0.8rem 0 0.8rem 6rem;   
         }
         &-example {
             font-size: 95%;
