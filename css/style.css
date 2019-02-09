@@ -115,13 +115,13 @@ body {
     width: 100%; }
   .search__top {
     background: #1e3799;
-    height: 26rem;
+    height: 24rem;
     position: fixed;
     top: 0;
     z-index: 50; }
     @media only screen and (max-width: 37.5em) {
       .search__top {
-        height: 24rem; } }
+        height: 22rem; } }
     .search__top-box {
       padding-top: 4rem;
       width: 52rem; }
@@ -159,6 +159,11 @@ body {
     list-style: none;
     padding-bottom: 1rem;
     font-size: 110%; }
+    @media only screen and (max-width: 37.5em) {
+      .search__suggestion-word {
+        width: 50%;
+        padding-left: 7rem;
+        line-height: 1.4; } }
     .search__suggestion-word a {
       text-decoration: none;
       color: #4267bd; }
@@ -176,7 +181,7 @@ body {
 
 .result {
   width: 100vw;
-  padding: 26rem 8vw 6rem 8vw;
+  padding: 22rem 8vw 6rem 8vw;
   margin: 0 auto; }
   @media only screen and (max-width: 75em) {
     .result {
@@ -307,7 +312,7 @@ body {
   position: absolute;
   bottom: -2rem;
   left: -15rem;
-  width: 12rem; }
+  width: 11rem; }
   @media only screen and (max-width: 37.5em) {
     #book-2 {
       bottom: -9rem;

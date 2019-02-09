@@ -19,7 +19,11 @@
             // background: #000;
             padding-bottom: 1rem;
             font-size: 110%;
-
+            @include respond(phone){
+                width: 50%;
+                padding-left: 7rem;
+                line-height: 1.4;
+            }
             & a {
                 text-decoration: none;
                 color: $color-blue-1;
