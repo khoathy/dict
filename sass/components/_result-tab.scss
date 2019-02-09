@@ -6,16 +6,16 @@
     width: 100%;
     height: 4rem;
     //border-bottom: solid 1px $color-gray;
-    background-color: #fff;
+  // background-color:red;
     &-link {
         height: 100%;
-        float: left;
+        display: block;
         outline: none;
         border: none;
         background-color: inherit;
         color: $color-gray-2;
         cursor: pointer;
-        padding : 1rem;
+        padding : 1rem 2rem;
         &:not(:last-child){
             margin-right: 4rem;
         }
@@ -25,11 +25,13 @@
         &.active {
             color: $color-carrot;
         }
+
+        @include respond (tab-port){
+            float: left;
+        }
         
     }
     
     &-content {
-
-        
     }
 }

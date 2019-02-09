@@ -1,16 +1,26 @@
 .result {
-    width: 75vw;
+    width: 100vw;
     padding: 28rem 8vw 6rem 8vw;
     margin: 0 auto;
-    
-    @include respond(tab-port){
-        width: 95vw;
+
+    @include respond(tab-land){
+        display: block;
     }
     @include respond(phone){
         padding: 23rem 2rem 6rem 2rem;
     }
-    
 
+//left column    
+    &__word {
+        min-width: 36rem;
+        height: 100%;
+        position: fixed;
+        @include respond(tab-port){
+            position: relative;
+            width: 100%;
+        }
+        //background-color: aqua;
+    }
     &__heading {
         background: $color-gray-1;
         color: $color-blue;
@@ -20,12 +30,26 @@
        //border-bottom: 2px solid $color-gray-2;
     }
     &__pronunciation {
-        padding: 0 1rem;
+        padding: 1rem 2rem;
         color: $color-blue-2;
-        display: inline-block;
+        @include respond (tab-port){
+            padding: 1rem 1rem 0 1rem;
+            display: inline-block;
+        }
     }
+    &__speaker {
+        &-svg { 
+            width: 22px;
+            fill:$color-blue-2;
+        }
+    }
+
+//right column
     &__content {
-        width: 100%;
+        padding-left: 38rem;
+        @include respond (tab-port){
+            padding-left: 0;
+        }
     }
     // &__tab {
     //     width: 100%;
