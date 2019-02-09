@@ -115,7 +115,7 @@ body {
     width: 100%; }
   .search__top {
     background: #1e3799;
-    height: 28rem;
+    height: 26rem;
     position: fixed;
     top: 0;
     z-index: 50; }
@@ -176,7 +176,7 @@ body {
 
 .result {
   width: 100vw;
-  padding: 28rem 8vw 6rem 8vw;
+  padding: 26rem 8vw 6rem 8vw;
   margin: 0 auto; }
   @media only screen and (max-width: 75em) {
     .result {
@@ -200,14 +200,19 @@ body {
     padding: 0 2rem; }
   .result__pronunciation {
     padding: 1rem 2rem;
-    color: #6687eb; }
+    font-size: 2rem;
+    color: #4267bd; }
     @media only screen and (max-width: 56.25em) {
       .result__pronunciation {
         padding: 1rem 1rem 0 1rem;
         display: inline-block; } }
-  .result__speaker-svg {
-    width: 22px;
-    fill: #6687eb; }
+  .result__speaker {
+    padding-left: 0.5rem; }
+    .result__speaker-svg {
+      width: 2.4rem;
+      fill: #6687eb; }
+      .result__speaker-svg:hover {
+        fill: #4267bd; }
   .result__content {
     padding-left: 38rem; }
     @media only screen and (max-width: 56.25em) {
