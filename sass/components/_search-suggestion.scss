@@ -4,13 +4,16 @@
         width: 100%;
         position: absolute;
         top : 100%;
-        margin-top: 3rem;
-        
+        z-index: -1;
         &-list {
             width: 100%;
             text-align: center;
             //display: inline-block;
-            padding: 0;
+            padding-top: 5rem;
+            @include respond(phone){
+                padding-left: 7rem;
+            }
+            
         }
         &-word {
             width: 25%;
@@ -21,7 +24,6 @@
             font-size: 110%;
             @include respond(phone){
                 width: 50%;
-                padding-left: 7rem;
                 line-height: 1.4;
             }
             & a {
@@ -35,7 +37,14 @@
     } 
 
     &__top-suggestion {
-        margin-top: 1rem;
+        top : 100%;
+        background-color: rgba($color-blue,0.98);
+        border-radius: 0rem 0rem 1rem 1rem;
+        box-shadow: 2px 2px 1rem rgba($color-blue,0.5);
+        &-list{
+            padding-top: 4rem;
+            
+        }
         & .search__suggestion-word {
             font-size: 85%;
             & a {
