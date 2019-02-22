@@ -4,10 +4,13 @@
     position: absolute;
     bottom: -2rem;
     left: -15rem;
-    width: 11rem;
+    width: 10rem;
+    @include respond(tab-port){
+        width: 9rem;
+        left: -11rem;
+    }
     @include respond(phone){
-       // bottom: -8rem;
-        left: -10rem;
         width: 8rem;
+        left: -10rem;
     }
 }

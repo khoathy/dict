@@ -10,9 +10,6 @@
             text-align: center;
             //display: inline-block;
             padding-top: 5rem;
-            @include respond(phone){
-                padding-left: 7rem;
-            }
             
         }
         &-word {
@@ -38,11 +35,12 @@
 
     &__top-suggestion {
         top : 100%;
-        background-color: rgba($color-blue,0.98);
-        border-radius: 0rem 0rem 1rem 1rem;
+        min-width: 25rem;
+        background-color: rgba($color-blue-4,0.98);
+        border-radius: 0rem 0rem 0.2rem 0.2rem;
         box-shadow: 2px 2px 1rem rgba($color-blue,0.5);
         &-list{
-            padding-top: 4rem;
+            padding-top: 3.5rem;
             
         }
         & .search__suggestion-word {
