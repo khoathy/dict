@@ -171,9 +171,9 @@ body {
 .search__top-suggestion {
   top: 100%;
   min-width: 25rem;
-  background-color: rgba(56, 80, 189, 0.98);
+  background-color: #fefefe;
   border-radius: 0rem 0rem 0.2rem 0.2rem;
-  box-shadow: 2px 2px 1rem rgba(7, 51, 181, 0.5); }
+  box-shadow: 2px 2px 1rem rgba(85, 85, 94, 0.2); }
   .search__top-suggestion-list {
     padding-top: 3.5rem; }
   .search__top-suggestion .search__suggestion-word {
@@ -181,7 +181,7 @@ body {
     .search__top-suggestion .search__suggestion-word a {
       color: #d3d3d3; }
       .search__top-suggestion .search__suggestion-word a:hover {
-        color: #6687eb; }
+        color: #0733b5; }
 
 .result {
   width: 100vw;

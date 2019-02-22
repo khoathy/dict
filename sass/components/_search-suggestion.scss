@@ -36,9 +36,11 @@
     &__top-suggestion {
         top : 100%;
         min-width: 25rem;
-        background-color: rgba($color-blue-4,0.98);
+        //background-color: rgba($color-blue-4,0.98);
+        background-color: $color-bg-light;
         border-radius: 0rem 0rem 0.2rem 0.2rem;
-        box-shadow: 2px 2px 1rem rgba($color-blue,0.5);
+        //box-shadow: 2px 2px 1rem rgba($color-blue,0.5);
+        box-shadow: 2px 2px 1rem rgba($color-gray-4,0.2);
         &-list{
             padding-top: 3.5rem;
             
@@ -48,7 +50,8 @@
             & a {
                 color: $color-gray-2;
                 &:hover{
-                    color: $color-blue-2;
+                    //color: $color-blue-2;
+                    color: $color-blue;
                 }
             }
         
