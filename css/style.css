@@ -27,7 +27,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #fefefe; }
 
 body {
   font-family: 'Quicksand', sans-serif;
@@ -95,7 +96,7 @@ body {
     color: #0733b5;
     background: none;
     border: none;
-    border-bottom: solid 2px rgba(102, 135, 235, 0.8); }
+    border-bottom: solid 2px rgba(86, 123, 231, 0.8); }
     @media only screen and (max-width: 37.5em) {
       .search__input {
         padding-bottom: 0.5rem;
@@ -105,11 +106,11 @@ body {
       font-weight: 500; }
     .search__input:focus {
       outline: none;
-      border-bottom: solid 2px #6687eb; }
+      border-bottom: solid 2px #567be7; }
   .search__info {
     font-size: 70%;
     font-weight: bold;
-    color: #6687eb;
+    color: #567be7;
     margin: 0;
     padding: 1rem 0;
     text-align: right;
@@ -219,7 +220,7 @@ body {
     padding-left: 0.5rem; }
     .result__speaker-svg {
       width: 2.4rem;
-      fill: #6687eb; }
+      fill: #567be7; }
       .result__speaker-svg:hover {
         fill: #4267bd; }
   .result__content {
@@ -304,6 +305,12 @@ body {
         color: #d3d3d3;
         font-size: 1.4rem;
         text-transform: uppercase; }
+  .nav__logo {
+    width: 10rem;
+    position: fixed;
+    top: 1rem;
+    left: 2rem;
+    z-index: 100; }
 
 .bg__shape {
   position: absolute;
@@ -321,7 +328,7 @@ body {
 
 #book-1 {
   position: absolute;
-  bottom: 1rem;
+  bottom: 0rem;
   right: 0;
   width: 100vw; }
   @media only screen and (max-width: 56.25em) {
