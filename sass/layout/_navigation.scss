@@ -23,8 +23,12 @@
         width: 10rem;
         position: fixed;
         top: 1rem;
-        left: 2rem;
+        left: 4rem;
         z-index: 100;
+        &-res {
+            opacity: 0.5;
+            width: 8rem;
+        }
         
     }
 }

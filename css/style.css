@@ -309,8 +309,11 @@ body {
     width: 10rem;
     position: fixed;
     top: 1rem;
-    left: 2rem;
+    left: 4rem;
     z-index: 100; }
+    .nav__logo-res {
+      opacity: 0.5;
+      width: 8rem; }
 
 .bg__shape {
   position: absolute;
@@ -337,6 +340,11 @@ body {
   @media only screen and (max-width: 37.5em) {
     #book-1 {
       right: -30rem; } }
+
+.logo__bg {
+  position: absolute;
+  bottom: 1rem;
+  width: 90vw; }
 
 #book-2 {
   position: absolute;
