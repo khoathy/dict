@@ -81,6 +81,9 @@ body {
     width: 65vw;
     border-radius: 5px;
     transition: all 0.3s; }
+    @media only screen and (max-width: 75em) {
+      .search__box {
+        top: 45%; } }
     @media only screen and (max-width: 37.5em) {
       .search__box {
         width: 80vw; } }
@@ -117,8 +120,8 @@ body {
     width: 100%;
     position: absolute; }
   .search__top {
-    background: #1e3799;
-    height: 16rem;
+    background: #1c41b1;
+    height: 16.5rem;
     position: fixed;
     top: 0;
     z-index: 50; }
@@ -306,14 +309,14 @@ body {
         font-size: 1.4rem;
         text-transform: uppercase; }
   .nav__logo {
-    width: 10rem;
+    width: 12rem;
     position: fixed;
-    top: 1rem;
+    top: 2rem;
     left: 4rem;
     z-index: 100; }
     .nav__logo-res {
-      opacity: 0.5;
-      width: 8rem; }
+      opacity: 0.8;
+      top: 1rem; }
 
 .bg__shape {
   position: absolute;
@@ -341,21 +344,16 @@ body {
     #book-1 {
       right: -30rem; } }
 
-.logo__bg {
-  position: absolute;
-  bottom: 1rem;
-  width: 90vw; }
-
 #book-2 {
   position: absolute;
   bottom: -2rem;
-  left: -15rem;
-  width: 10rem; }
+  left: -12rem;
+  width: 9rem; }
   @media only screen and (max-width: 56.25em) {
-    #book-2 {
-      width: 9rem;
-      left: -11rem; } }
-  @media only screen and (max-width: 37.5em) {
     #book-2 {
       width: 8rem;
       left: -10rem; } }
+  @media only screen and (max-width: 37.5em) {
+    #book-2 {
+      width: 7rem;
+      left: -9rem; } }

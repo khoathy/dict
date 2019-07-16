@@ -3,14 +3,14 @@
 #book-2 {
     position: absolute;
     bottom: -2rem;
-    left: -15rem;
-    width: 10rem;
+    left: -12rem;
+    width: 9rem;
     @include respond(tab-port){
-        width: 9rem;
-        left: -11rem;
-    }
-    @include respond(phone){
         width: 8rem;
         left: -10rem;
+    }
+    @include respond(phone){
+        width: 7rem;
+        left: -9rem;
     }
 }
